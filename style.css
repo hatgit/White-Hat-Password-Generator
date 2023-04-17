@@ -1,0 +1,329 @@
+/* Add these new styles for the password color indicator */
+
+h1 {
+  font-size: 0.25 rem; /* change the value as needed */
+}
+
+.password-color-indicator {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-left: 10px;
+  flex-shrink: 0;
+}
+
+/* Password Strength Legend */
+
+/* not being used
+
+.legend-container {
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+}
+
+/* 
+/* not being used 
+
+.legend-section {
+  width: 100%;
+  margin-top: 20px;
+/* 
+
+/* Default styles */
+.legend {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+/* Adjustments for smaller screens */
+@media only screen and (max-width: 600px) {
+  .legend {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+
+  .legend-item {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+    word-wrap: break-word;
+  }
+
+  .legend-item b {
+    display: inline-block;
+    width: 110px;
+  }
+
+  #legend-image {
+    width: 300px;
+    margin-right: 20px;
+  }
+}
+
+/* Password legend strength colors */
+.legend-item.purple {
+  background-color: #4b0082;
+  color: #e2d7d7;
+}
+
+.legend-item.indigo {
+  background-color: #8a2be2;
+  color: #f5f1f1;
+}
+
+.legend-item.blue {
+  background-color: #2FB82F;
+  color: #080707;
+}
+
+.legend-item.green {
+  background-color: #49CD49;
+  color: #0e0d0d;
+}
+
+.legend-item.yellow {
+  background-color: #FFD966;
+  color: #000000;
+}
+
+.legend-item.orange {
+  background-color: #FFE7B2;
+  color: #0c0c0c;
+}
+
+.legend-item.red {
+  background-color: #F6D1D1;
+  color: #0b0b0b;
+}
+
+
+/* Password container strength colors */
+#password-container.purple {
+  background-color: #4b0082;
+  color: #e2d7d7;
+}
+
+#password-container.indigo {
+  background-color: #8a2be2;
+  color: #f5f1f1;
+}
+
+#password-container.blue {
+  background-color: #2FB82F;
+  color: #080707;
+}
+
+#password-container.green {
+  background-color: #49CD49;
+  color: #0e0d0d;
+}
+
+#password-container.yellow {
+  background-color: #FFD966;
+  color: #000000;
+}
+
+#password-container.orange {
+  background-color: #FFE7B2;
+  color: #0c0c0c;
+}
+
+#password-container.red {
+  background-color: #F6D1D1;
+  color: #0b0b0b;
+}
+
+
+#generate {
+  width: auto; /* Add this line to set a fixed width */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:5px;
+  
+  
+}
+
+#password-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #333;
+  padding: 5px;
+  border: 2px solid #b3acac;
+  border-radius: 5px;
+  
+}
+/*not used? */
+.password-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  color: white;
+}
+
+#password-output {
+  background-color: var(--password-background-color);
+  padding: 10px;
+}
+.info-icon {
+  font-family: 'Material Icons';
+  font-weight: lighter; /* or 'normal' */
+  font-size: 24px;
+  color: #b3acac;
+  position: relative;
+  display: inline-block;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.info-text {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  display: none;
+  padding: 10px;
+  background-color: #0c1c92; /* Change the background color to a darker shade */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+  color: #FFFFFF !important; /* Change the text color to a lighter shade */
+  font-size: 12px;
+  text-indent: 7px;
+  padding-left: 7px; /* adjust the left padding as needed */
+  
+}
+
+.info-icon:hover .info-text {
+  display: block;
+  text-align: justify;
+  padding: 10px 20px 10px 10px;
+  background-color: #333;
+  color: #FFFFFF !important;
+  border-radius: 5px;
+  width: auto;
+  font-size: 12px;
+ 
+}
+
+/* form styles */
+
+.form-wrapper {
+  background-color: #aba5a5;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: auto;
+  max-width: auto;
+  max-height: fit-content;
+  margin: 0 auto;
+  border: 10px-solid #8a2be2;
+  
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 20px-solid #2ba8e2;
+  
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+ol {
+  counter-reset: item;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+}
+
+li label,
+li input {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+li input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* instruction container*/
+
+.instruction-container {
+  background-color: #f5f5f5;
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.instruction-container p {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.instruction-container ol {
+  list-style-type: decimal;
+  margin-left: 20px;
+}
+
+.instruction-container li {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.instruction-container p:last-child {
+  margin-top: 10px;
+  font-size: 14px;
+  font-style: italic;
+}
+
+
+#copy-password-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+  pointer-events: auto;
+}
+
+#copy-password-btn:hover {
+  background-color: #3e8e41;
+}
+
+"browser_action": {
+  "default_icon": {
+    "16": "/icon-16.png",
+    "32": "/icon-32.png",
+    "48": "/icon-48.png",
+    "128": "/icon-128.png"
+  }
+}

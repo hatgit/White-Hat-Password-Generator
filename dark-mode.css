@@ -1,0 +1,379 @@
+
+.dark-mode .instruction-container {
+  color: #c7bfbf;
+  background-color: black;
+}
+
+
+.dark-mode .form-wrapper {
+  background-color: #333;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(221, 213, 213, 0.456);
+  padding: 20px;
+  width: auto;
+  max-width: auto;
+  max-height: fit-content;
+  margin: 0 auto;
+  font: #f5f1f1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border: 2px solid #b3acac;
+
+}
+
+/* Add these new styles for the password color indicator */
+.password-color-indicator {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: #333;
+  color: #f5f1f1;
+}
+
+.dark-mode .legend-container {
+  color: #f5f1f1;
+}
+
+.dark-mode #generate {
+  background-color: #827c87;
+  color: white;
+}
+
+.dark-mode #generate:hover {
+  background-color: #30de4a;
+}
+
+.dark-mode .info-text {
+  background-color: #5b5656;
+  color: #f5f1f1;
+}
+
+.dark-mode .switch input:checked + .slider {
+  background-color: #5b5656;
+}
+
+.dark-mode #password {
+  background-color: #5b5656;
+  color: #f5f1f1;
+  border: 1px solid #ccc;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #333;
+  color: #f5f1f1;
+}
+
+/* Other styles remain unchanged */
+/* ... */
+
+/* ... */
+/* Password Strength Legend */
+.legend-container {
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+  }
+  
+  .legend-section {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+ /* Default styles */
+.legend {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+/* Adjustments for smaller screens */
+@media only screen and (max-width: 600px) {
+  .legend {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+  
+  
+  .legend-item {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+    word-wrap: break-word;
+  }
+  
+  .legend-item b {
+    display: inline-block;
+    width: 110px;
+  }
+  
+  #legend-image {
+    width: 300px;
+    margin-right: 20px;
+  }
+  
+  /* Password legend strength colors */
+
+  .dark-mode .legend-item.purple {
+    background-color: #4b0082;
+    color: #ffffff;
+  }
+  
+  .dark-mode .legend-item.indigo {
+    background-color: #8a2be2;
+    color: #ffffff;
+  }
+  
+  .dark-mode .legend-item.blue {
+    background-color: #2FB82F;
+    color: #ffffff;
+  }
+  
+  .dark-mode .legend-item.green {
+    background-color: #49CD49;
+    color: #fff;
+  }
+  
+  .dark-mode .legend-item.yellow {
+    background-color: #FFD966;
+    color: #000000;
+  }
+  
+  .dark-mode .legend-item.orange {
+    background-color: #FFE7B2;
+    color: #0c0c0c;
+  }
+  
+  .dark-mode .legend-item.red {
+    background-color: #F6D1D1;
+    color: #0b0b0b;
+  }
+
+  
+ /* Password container strength colors */
+
+ .dark-mode #password-container.purple {
+  background-color: #4b0082;
+  color: #ffffff;
+}
+
+.dark-mode #password-container.indigo {
+  background-color: #8a2be2;
+  color: #ffffff;
+}
+
+.dark-mode #password-container.blue {
+  background-color: #2FB82F;
+  color: #ffffff;
+}
+
+.dark-mode #password-container.green {
+  background-color: #49CD49;
+  color: #fff;
+}
+
+.dark-mode #password-container.yellow {
+  background-color: #FFD966;
+  color: #000000;
+}
+
+.dark-mode #password-container.orange {
+  background-color: #FFE7B2;
+  color: #0c0c0c;
+}
+
+.dark-mode #password-container.red {
+  background-color: #F6D1D1;
+  color: #0b0b0b;
+}
+  
+  #password-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    color: white;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .password-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    color: white;
+  }
+  
+  #password-output {
+    background-color: var(--password-background-color);
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  #password {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    resize: none;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+    --padding-multiplier: 1;
+    white-space: pre-wrap;
+    max-height: 100px;
+    overflow-y: auto;
+    word-break: break-all;
+    height:auto;
+  }
+  
+
+  #entropy {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  :root {
+    --password-background-color: #ffffff;
+    /* ... other variable definitions ... */
+  }
+  
+  body {
+    width: 300px;
+  }
+  .container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  #generate {
+    margin-right: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #827c87;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    justify-content: center; /* align horizontally center */
+    align-items: center; /* align vertically center */
+    width: 100%; /* occupy full width */
+    box-sizing: border-box;
+  }
+  
+  #generate:hover {
+    background-color: #30de4a;
+  }
+
+  
+  .info-icon {
+    position: relative;
+    display: inline-block;
+    
+  }
+  
+  .info-text {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    display: none;
+    padding: 10px;
+    background-color: #5b5656;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    color: #f5f1f1;
+    font-size: 12px;
+  }
+  
+  .info-icon:hover .info-text {
+    display: block;
+  }
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+  
