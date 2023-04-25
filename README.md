@@ -1,4 +1,5 @@
-![White-Hat-Password-Generator-logo](https://user-images.githubusercontent.com/5213035/232526705-6ccb2ae8-33fe-45a1-8532-0db6c3e453bb.png)
+![WHPG-background](https://user-images.githubusercontent.com/5213035/234356631-4bbc9e7c-d4ce-4ce6-93ee-327d7d18e146.png)
+
 
 Copyright (c) 2023, Steven Hatzakis LLC
 
@@ -20,3 +21,5 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDER ''AS IS'' AND ANY EXPRESS OR I
 <p class="has-line-data" data-line-start="27" data-line-end="28">© 2023 White Hat Password Generator</p>
 <p class="has-line-data" data-line-start="30" data-line-end="31">© 2023 White Hat Password System</p>
 <p class="has-line-data" data-line-start="32" data-line-end="33"><a href="https://e20.io">https://e20.io</a></p>
+
+![White-Hat-Password-Generator-logo](https://user-images.githubusercontent.com/5213035/232526705-6ccb2ae8-33fe-45a1-8532-0db6c3e453bb.png)
