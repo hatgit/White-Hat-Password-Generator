@@ -3,8 +3,11 @@
 # White Hat Password Generator: The Ultimate Chrome Plugin Solution for Cryptographically-Secure Password Generation.
 Elevate your password security, before it's too late!
 
-Easily Insert new passwords with one-click, on any password field (requires simply right-clicking and selecting Generate Secure Password from drop-down menu).
--Take control of the cybersecurity for your personal and business needs with White Hat Password Generator!
+ **[Install from Google Chrome Store:]** (https://chrome.google.com/webstore/detail/white-hat-password-genera/pbofgfidfngmafemlgkjmllolchjnmgk/)
+
+- Easily Insert new passwords with one-click, on any password field (requires simply right-clicking and selecting Generate Secure Password from drop-down menu).
+
+- Take control of the cybersecurity for your personal and business needs with White Hat Password Generator!
 
 The one-click passwords are pre-set to 18 characters and produce roughly 111-bits of security, making them suitable for most use-cases which may restrict the length beyond 18 characters.
 
