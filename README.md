@@ -17,6 +17,8 @@ In this digital age, it's more important than ever to use strong and unique pass
 
 ## Why Trust this app?
 
+All the code in this plugin runs locally from your device, and all code dependencies are in-line, with no reliance on 3rd party websites. In otherwords, the passwords you create with this app remain locally on your device and aren't sent to any 3rd party websites or servers, etc.. In addition, there is no data that is being shared with anyone or collected by the developer, other than basic usage statistics provided on the Chrome webstore to developers, such as the number of installations. We believe the app to be ultra safe and trust the code which is open source and available on Github: https://github.com/hatgit/White-Hat-Password-Generator
+
 I created this app because I found myself constantly running custom python code whenever I wanted to create a strong password when logging into a new service or resetting my password for one of my online accounts.
 
 Yet, I wanted to make it easy for myself, and millions of people to not only create secure passwords, but learn about password security during the process, to make the internet a safer place.
