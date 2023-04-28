@@ -3,7 +3,7 @@
 # White Hat Password Generator: The Ultimate Chrome Plugin Solution for Cryptographically-Secure Password Generation.
 Elevate your password security, before it's too late!
 
- **[Install from Google Chrome Store:]** (https://chrome.google.com/webstore/detail/white-hat-password-genera/pbofgfidfngmafemlgkjmllolchjnmgk/)
+ **[Click Here to install from Google Chrome Store:](https://chrome.google.com/webstore/detail/white-hat-password-genera/pbofgfidfngmafemlgkjmllolchjnmgk/)**
 
 - Easily Insert new passwords with one-click, on any password field (requires simply right-clicking and selecting Generate Secure Password from drop-down menu).
 
