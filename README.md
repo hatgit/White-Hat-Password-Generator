@@ -29,22 +29,23 @@ The use of this CSPRNG makes it unfeasible for a password generated with this so
 
 That said, users must still ensure their devices are secure and that no one is eavesdropping when they are performing related actions involving their cybersecurity (be sure to run anti-virus and anti-malware and have strong network passwords and cybersecurity measures and only install trusted applications).
 
-**Features of this plugin:**
-- Insert Passwords with a Click: You can generate a secure password and insert it into any password field with a simple right-click.
+## **Features of this plugin:**
 
-**Advanced Settings:** Choose your desired level of security, length, and character sets for complete control over the password generation process. The app will also show you how secure your password is with color-coded legends.
+- **Insert Passwords with a Click:** You can generate a secure password and insert it into any password field with a simple right-click.
 
-**Multiple Character Sets:** Use uppercase and lowercase letters, numbers, and special characters to make your passwords even more complex and secure. White Hat Password Generator will calculate the entropy to show you the resulting security level.
+- **Advanced Settings:** Choose your desired level of security, length, and character sets for complete control over the password generation process. The app will also show you how secure your password is with color-coded legends.
 
-**Easy to Use:** With a simple interface, even non-technical users will find the app easy to navigate.
+- **Multiple Character Sets:** Use uppercase and lowercase letters, numbers, and special characters to make your passwords even more complex and secure. White Hat Password Generator will calculate the entropy to show you the resulting security level.
 
-**Save Time:** Generate strong passwords in seconds without spending time creating them on your own.
+- **Easy to Use:** With a simple interface, even non-technical users will find the app easy to navigate.
 
-**Increase Security:** By using strong and unique passwords for each account, you'll greatly increase the security of your online accounts and sensitive data.
+- **Save Time:** Generate strong passwords in seconds without spending time creating them on your own.
 
-**No More Password Reuse:** Create unique passwords for each account to avoid being vulnerable to cyberattacks.
+- **Increase Security:** By using strong and unique passwords for each account, you'll greatly increase the security of your online accounts and sensitive data.
 
-**Flexible Password Generation:** Create numerical passwords, such as pins, of various lengths for increased security, or more character sets for increased entropy (the higher the entropy, the higher the resulting security level of your passwords, as measured in bits)
+- **No More Password Reuse:** Create unique passwords for each account to avoid being vulnerable to cyberattacks.
+
+- **Flexible Password Generation:** Create numerical passwords, such as pins, of various lengths for increased security, or more character sets for increased entropy (the higher the entropy, the higher the resulting security level of your passwords, as measured in bits)
 
 With a default password length of 18 characters and a combination of uppercase, lowercase, numbers, and common special characters, resulting passwords have about 111 bits of security. However, you can customize your password to meet your security needs, such as 256-bits which is suitable for cryptography and cryptocurrency applications, or up to 511-bit security for quantum resistance, and even higher (but inevitably longer passwords).
 
@@ -52,7 +53,7 @@ White Hat Password Generator is the ultimate solution for creating cryptographic
 
 Take control of your personal cybersecurity with the assurance that your passwords are safe and secure, while learning more about password security.
 
-**About secure passwords:** Just because a password is generated in a cryptographically-secure manner, doesn't mean it will be strong enough to be secure, if it doesn't carry sufficient entropy which is a measure of its strength using bits of security. This means a password with sufficient entropy is either long or sourced from a wide ranger of distinct characters, or has a combination of both.
+- **About secure passwords:** Just because a password is generated in a cryptographically-secure manner, doesn't mean it will be strong enough to be secure, if it doesn't carry sufficient entropy which is a measure of its strength using bits of security. This means a password with sufficient entropy is either long or sourced from a wide ranger of distinct characters, or has a combination of both.
 
 Unlike most password generators, White Hat Password Generator not only calculates the precise security strength of passwords it generates but also displays it to you, so that you can understand the level of security for the passwords you create with this software. Most software strength meters do not correctly calculate the actual strength the way we do.
 
@@ -60,7 +61,7 @@ Try the White Hat Password Generator app out today, and let us know what you thi
 
 Your feedback is valuable to help us improve our product over time, so we can help make your passwords and the world and safer place!
 
-White Hat Password Generator
+> White Hat Password Generator
 
 Use of this software is subject to terms and conditions, including license found here below:
 
