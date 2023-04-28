@@ -1,5 +1,6 @@
 ![WHPG-background](https://user-images.githubusercontent.com/5213035/234356631-4bbc9e7c-d4ce-4ce6-93ee-327d7d18e146.png)
 
+BSD-4 Clause License for White Hat Password Generator:
 
 Copyright (c) 2023, Steven Hatzakis LLC
 
