@@ -1,8 +1,8 @@
 ![WHPG-background](https://user-images.githubusercontent.com/5213035/234356631-4bbc9e7c-d4ce-4ce6-93ee-327d7d18e146.png)
 
-###BSD-4 Clause License for White Hat Password Generator:###
+### BSD-4 Clause License for White Hat Password Generator: 
 
-####Copyright (©) 2023, Steven Hatzakis LLC####
+#### Copyright (©) 2023, Steven Hatzakis LLC 
 
 All rights reserved.
 
@@ -12,7 +12,7 @@ Redistributions of source code must retain the above copyright notice, this list
 
 Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
 
-####All advertising materials mentioning features or use of this software must display the following acknowledgement: "This product includes software developed by Steven Hatzakis LLC".####
+#### All advertising materials mentioning features or use of this software must display the following acknowledgement: "This product includes software developed by Steven Hatzakis LLC". 
 
 Neither the name of Steven Hatzakis LLC nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
 
