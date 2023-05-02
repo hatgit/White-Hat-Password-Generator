@@ -1,4 +1,5 @@
-![WHPG-background](https://user-images.githubusercontent.com/5213035/234356631-4bbc9e7c-d4ce-4ce6-93ee-327d7d18e146.png)
+![icon-128](https://user-images.githubusercontent.com/5213035/235573221-a3768ec8-ef58-4859-9479-cb319b48267d.png)
+
 
 # White Hat Password Generator: The Ultimate Chrome Plugin Solution for Cryptographically-Secure Password Generation.
 Elevate your password security, before it's too late!
