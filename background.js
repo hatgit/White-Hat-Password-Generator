@@ -40,7 +40,7 @@ chrome.contextMenus.create({
 
 chrome.contextMenus.onClicked.addListener((info, tab) => {
   if (info.menuItemId === "generatePassword") {
-    const password = generatePassword(14, true, true, true, true, false);
+    const password = generatePassword(18, true, true, true, true, false);
     chrome.tabs.sendMessage(tab.id, { action: "insert-password", password });
   }
 });
