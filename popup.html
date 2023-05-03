@@ -10,83 +10,97 @@
 
 
 
-</head>
-<body>
-    <header>
-      <h1>White Hat Password Generator</h1>
-      <p><b>Create cryptographically-secure passwords:</b></p>
-
-    </header>
-
-    <main>
-      <label class="switch">
-        <input type="checkbox" id="darkModeToggle">
-        <span class="slider round"></span>
-        <span class="info-icon material-icons" data-info="test">
-
-          <span class="info-text">DARK MODE</span></span>
-
-      </label>
-
-      <br>
-
-      <br>
-        <div class="form-wrapper">
-          <div class="container">
-            <div class="form-container">
-              <for id="password-generation-form">
-                <ol>
-
-
-                    <li class="checkbox">
-                      <label for="password-length">Set Password Length: </label>
-                      <input type="number" id="password-length" min="3" value="14">
-                    </li>
-
-
-                    <li class="checkbox">
-                      <label for="includeUppercase">Include Uppercase('A-Z'):</label>
-                      <input type="checkbox" id="includeUppercase" checked>
-                    </li>
-
-                    <li class="checkbox">
-                      <label for="includeLowercase">Include Lowercase ('a-z'):</label>
-                      <input type="checkbox" id="includeLowercase" checked>
-                    </li>
-
-                    <li class="checkbox">
-                      <label for="includeNumbers">Include Numbers('0-9'):</label>
-                      <input type="checkbox" id="includeNumbers" checked>
-                    </li>
-
-                    <li class="checkbox">
-                      <label for="includeSymbols">Include Symbols('!@#$%^&*()'):</label>
-                      <input type="checkbox" id="includeSymbols" checked>
-                    </li>
-
-                    <li class="checkbox">
-                      <label for="includeBinary">Include Binary('01'):</label>
-                      <input type="checkbox" id="includeBinary">
-                    </li>
-
-                    <li> Click generate button below to create password</li>
-                  </ol>
-               </form>
-
-               <button id="generate">Generate Password </button>
-
-                <br>
+  </head>
+  <body>
+    <div class="form-wrapper-footer">
+      <div class="container-footer">
+        <footer>
+          <h1>White Hat Password Generator
+    <!---these classes wrap the background image in footer-->
+    <label class="switch">   <!---this is the switch in backgroun image for dark mode-->
+      <input type="checkbox" id="darkModeToggle">
+      <span class="slider round"></span>
+      <span class="info-icon material-icons" data-info="test">
+  
+        <!---<span class="info-text">DARK MODE</span></span>-->
+  
+    </label>
+    </div class="container-footer">
+  </div class="form-wrapper-footer">
+  </footer></h1>
+  
+  
+      <header>
+       <!---- <h1>White Hat Password Generator</h1>--->
+        
+        <footer><p> Use of this software is subject to terms and conditions by <a href="https://www.stevenhatzakis.com/whpg-terms/">© 2023 Steven Hatzakis LLC</a>. All rights reserved.</p></footer>
+      
+        <button id="generate">Generate Password </button>
+      </header>
+  
+      <main>
+  
+  
+        <div id="password-container">
+          <label for="password">Cryptographically-Secure Generated Password:</label>
+              <textarea id="password" rows="1" readonly></textarea>
+  
+              <p id="entropy">Strength: 0 entropy bits of security</p>
+              <button id="copy-password-btn">Copy Password</button>
+      </div>
+  
+  
+        <br>
+  
+        <br>
+          <div class="form-wrapper">
+            <div class="container">
+              <div class="form-container">
+                <for id="password-generation-form">
+                  <ol>
+  
+  
+                      <li class="checkbox">
+                        <label for="password-length">Boost security by increasing length: </label>
+                        <input type="number" id="password-length" min="8" value="18">
+                      </li>
+  
+  
+                      <li class="checkbox">
+                        <label for="includeUppercase">Include Uppercase('A-Z'):</label>
+                        <input type="checkbox" id="includeUppercase" checked>
+                      </li>
+  
+                      <li class="checkbox">
+                        <label for="includeLowercase">Include Lowercase ('a-z'):</label>
+                        <input type="checkbox" id="includeLowercase" checked>
+                      </li>
+  
+                      <li class="checkbox">
+                        <label for="includeNumbers">Include Numbers('0-9'):</label>
+                        <input type="checkbox" id="includeNumbers" checked>
+                      </li>
+  
+                      <li class="checkbox">
+                        <label for="includeSymbols">Include Symbols('!@#$%^&*()'):</label>
+                        <input type="checkbox" id="includeSymbols" checked>
+                      </li>
+  
+                      <li class="checkbox">
+                        <label for="includeBinary">Include Binary('01'):</label>
+                        <input type="checkbox" id="includeBinary">
+                      </li>
+  
+                      <li> Click generate button above to create password</li>
+                    </ol>
+                 </form>
+  
+                 
+  
+                  <br>
+              </div>
             </div>
           </div>
-        </div>
-
-        <div id="password-container">
-            <label for="password">Cryptographically-Secure Generated Password:</label>
-                <textarea id="password" rows="1" readonly></textarea>
-
-                <p id="entropy">Strength: 0 entropy bits of security</p>
-                <button id="copy-password-btn">Copy Password</button>
-        </div>
 
 
         <div class="instruction-container">
