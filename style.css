@@ -1,7 +1,9 @@
 /* Add these new styles for the password color indicator */
 
 h1 {
-  font-size: 0.25 rem; /* change the value as needed */
+  font-size: 0.05 rem; /* change the value as needed */
+   
+  
 }
 
 .password-color-indicator {
@@ -92,6 +94,11 @@ h1 {
   color: #0e0d0d;
 }
 
+.legend-item.lime {
+  background-color: #a9f4a9;
+  color: #0e0d0d;
+}
+
 .legend-item.yellow {
   background-color: #FFD966;
   color: #000000;
@@ -129,6 +136,11 @@ h1 {
   color: #0e0d0d;
 }
 
+#password-container.lime {
+  background-color: #a9f4a9;
+  color: #0e0d0d;
+}
+
 #password-container.yellow {
   background-color: #FFD966;
   color: #000000;
@@ -162,7 +174,7 @@ h1 {
   align-items: center;
   color: white;
   background-color: #333;
-  padding: 5px;
+  padding: 1px;
   border: 2px solid #b3acac;
   border-radius: 5px;
   
@@ -184,13 +196,25 @@ h1 {
 .info-icon {
   font-family: 'Material Icons';
   font-weight: lighter; /* or 'normal' */
-  font-size: 24px;
+  font-size: 8px;
   color: #b3acac;
   position: relative;
   display: inline-block;
   margin-right: 5px;
   cursor: pointer;
+  
 }
+/* doesn't work */
+/*.switch:hover {
+  font-family: 'Material Icons';
+  font-weight: lighter; 
+  font-size: 12px;
+  color: #4CAF50;
+  position: relative;
+  display: inline-block;
+  margin-right: 5px;
+  cursor: pointer;
+}*/
 
 .info-text {
   position: absolute;
@@ -222,6 +246,40 @@ h1 {
  
 }
 
+
+/* footer container and form styles */
+
+.form-wrapper-footer {
+  background-color: #aba5a5;
+  background-image: url('icon-32.png');
+  background-repeat: no-repeat;
+  background-size: 180x 180px;
+  background-position: top center; ;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 14px;
+  width: auto;
+  max-width: auto;
+  height:75px;
+  max-height: fit-content;
+  margin: 0 auto;
+  border: 10px-solid #030006;
+  justify-content: auto;
+  align-items: auto;
+  
+  
+}
+
+.container-footer {
+  display: flex;
+  justify-content: auto;
+  align-items: auto;
+  border: 20px-solid #2ba8e2;
+
+  
+  
+}
+
 /* form styles */
 
 .form-wrapper {
@@ -234,7 +292,7 @@ h1 {
   max-height: fit-content;
   margin: 0 auto;
   border: 10px-solid #8a2be2;
-  
+
 }
 
 .container {
@@ -308,7 +366,7 @@ li input[type="checkbox"] {
   background-color: #4CAF50;
   color: white;
   padding: 10px;
-  border: none;
+  border: 4px;
   border-radius: 5px;
   cursor: pointer;
   margin-left: 10px;
@@ -319,11 +377,51 @@ li input[type="checkbox"] {
   background-color: #3e8e41;
 }
 
-"browser_action": {
-  "default_icon": {
-    "16": "/icon-16.png",
-    "32": "/icon-32.png",
-    "48": "/icon-48.png",
-    "128": "/icon-128.png"
+#generate:hover {
+
+background-color: #49CD49;
+}
+
+:root {
+  --link-color: #0066cc;
+  --link-hover-color: #0099ff;
+  --dark-mode-link-color: #80bfff;
+  --dark-mode-link-hover-color: #a6caff;
+}
+
+footer a {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: var(--link-hover-color);
+}
+
+@media (prefers-color-scheme: dark) {
+  footer a {
+    color: var(--dark-mode-link-color);
+  }
+
+  footer a:hover {
+    color: var(--dark-mode-link-hover-color);
   }
 }
+#title {
+  font-size: 12px;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  color: #333333;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+#h1 {
+  font-size: 10px;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  color: #333333;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
