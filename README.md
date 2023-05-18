@@ -35,6 +35,9 @@ The use of this CSPRNG makes it unfeasible for a password generated with this so
 
 That said, users must still ensure their devices are secure and that no one is eavesdropping when they are performing related actions involving their cybersecurity (be sure to run anti-virus and anti-malware and have strong network passwords and cybersecurity measures and only install trusted applications).
 
+<img width="1460" alt="WHPG" src="https://github.com/hatgit/White-Hat-Password-Generator/assets/5213035/9806243b-e023-490d-a5f6-6f7eb582acaf">
+
+
 ## **Features of this plugin:**
 
 - **Insert Passwords with a Click:** You can generate a secure password and insert it into any password field with a simple right-click.
