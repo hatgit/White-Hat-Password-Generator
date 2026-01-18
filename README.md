@@ -97,4 +97,5 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDER ''AS IS'' AND ANY EXPRESS OR I
 <p class="has-line-data" data-line-start="30" data-line-end="31">© 2023 White Hat Password System</p>
 <p class="has-line-data" data-line-start="32" data-line-end="33"><a href="https://StevenHatzakis.com">https://StevenHatzakis.com</a></p>
 
-![White-Hat-Password-Generator-logo](https://user-images.githubusercontent.com/5213035/232526705-6ccb2ae8-33fe-45a1-8532-0db6c3e453bb.png)
+<img width="1400" height="560" alt="marquee_promo_1400x560" src="https://github.com/user-attachments/assets/c7dd6770-0dc7-41f5-a7f2-e47a90ede384" />
+
