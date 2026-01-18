@@ -1,83 +1,57 @@
-chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
-  if (request.action === 'generate-password') {
-    // Get the active element
-    const activeElement = document.activeElement;
+(function () {
+  'use strict';
 
-    // Generate password using existing function
-    const password = generatePassword(
-      14, // Default password length
-      true, // includeUppercase
-      true, // includeLowercase
-      true, // includeNumbers
-      true, // includeSymbols
-      false // includeBinary
-    );
+  // Prevent redeclaration if script is injected multiple times
+  if (window.hasRunWhitelistPasswordGenerator) {
+    return;
+  }
+  window.hasRunWhitelistPasswordGenerator = true;
 
-    // Set the value of the active element to the generated password
-    activeElement.value = password;
-  }
-});
+  console.log('White Hat Password Generator: Content script loaded');
 
-function generatePassword(length, includeUppercase, includeLowercase, includeNumbers, includeSymbols, includeBinary) {
-  let charset = '';
+  chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
+    const activeElement = getDeepActiveElement();
+    if (!activeElement || (activeElement.tagName !== 'INPUT' && activeElement.tagName !== 'TEXTAREA')) {
+      return;
+    }
 
-  if (includeLowercase) {
-    charset += 'abcdefghijklmnopqrstuvwxyz';
-  }
-  if (includeUppercase) {
-    charset += 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-  }
-  if (includeNumbers) {
-    charset += '0123456789';
-  }
-  if (includeSymbols) {
-    charset += '!@#$%^&*()';
-  }
-  if (includeBinary) {
-    charset += '01';
+    if (request.action === 'generate-password') {
+      const password = generateSecurePassword(18, true, true, true, true, false);
+      activeElement.value = password;
+      activeElement.dispatchEvent(new Event('input', { bubbles: true }));
+    } else if (request.action === 'insert-password') {
+      // Context menu sends the password directly
+      activeElement.value = request.password;
+      activeElement.dispatchEvent(new Event('input', { bubbles: true }));
+    }
+  });
+
+  // Helper to find the true active element (penetrating Shadow DOM)
+  function getDeepActiveElement() {
+    let el = document.activeElement;
+    while (el && el.shadowRoot && el.shadowRoot.activeElement) {
+      el = el.shadowRoot.activeElement;
+    }
+    return el;
   }
 
-  let password = '';
-  const randomArray = new Uint32Array(length);
-  crypto.getRandomValues(randomArray);
-  for (let i = 0, n = charset.length; i < length; ++i) {
-    password += charset.charAt(randomArray[i] % n);
+  function generateSecurePassword(length, includeUppercase, includeLowercase, includeNumbers, includeSymbols, includeBinary) {
+    let charset = '';
+
+    if (includeLowercase) charset += 'abcdefghijklmnopqrstuvwxyz';
+    if (includeUppercase) charset += 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    if (includeNumbers) charset += '0123456789';
+    if (includeSymbols) charset += '!@#$%^&*()';
+    if (includeBinary) charset += '01';
+
+    if (charset === '') return '';
+
+    let password = '';
+    const randomArray = new Uint32Array(length);
+    crypto.getRandomValues(randomArray);
+    for (let i = 0, n = charset.length; i < length; ++i) {
+      password += charset.charAt(randomArray[i] % n);
+    }
+    return password;
   }
-
-  const passwordOutput = document.getElementById('password');
-  passwordOutput.value = password;
-  passwordOutput.style.setProperty('--padding-multiplier', Math.max(Math.ceil(password.length / 10), 1));
-
-  // Find the password input field
-  const passwordInput = document.querySelector('input[type="password"]');
-  if (passwordInput) {
-    // Set the value of the password input field to the generated password
-    passwordInput.value = password;
-  }
-
-
-  return password;
-}
-
-console.log('Content script injected');
-
-function findActiveElement() {
-  let activeElement = document.activeElement;
-  while (activeElement && activeElement.shadowRoot && activeElement.shadowRoot.activeElement) {
-    activeElement = activeElement.shadowRoot.activeElement;
-  }
-  return activeElement;
-}
-
-function findActiveElement() {
-  const activeElement = document.activeElement;
-  if (activeElement.tagName === 'IFRAME') {
-    return activeElement.contentDocument.activeElement;
-  } else {
-    return activeElement; 
-    console.log('No password input field found');
-  }
-}
-
-  
-  
+})();

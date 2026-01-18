@@ -29,18 +29,34 @@ const generatePassword = (length, includeUppercase, includeLowercase, includeNum
 
 chrome.runtime.onInstalled.addListener(() => {
   chrome.action.setBadgeBackgroundColor({ color: '#041734' });
-  chrome.action.setIcon({path: "icon-128.png"});
-});
+  chrome.action.setIcon({ path: "icon-128.png" });
 
-chrome.contextMenus.create({
-  id: "generatePassword",
-  title: "Generate Secure Password",
-  contexts: ["editable"]
+  chrome.contextMenus.removeAll(() => {
+    chrome.contextMenus.create({
+      id: "generatePassword",
+      title: "Generate Secure Password",
+      contexts: ["editable"]
+    });
+  });
 });
 
 chrome.contextMenus.onClicked.addListener((info, tab) => {
   if (info.menuItemId === "generatePassword") {
     const password = generatePassword(18, true, true, true, true, false);
-    chrome.tabs.sendMessage(tab.id, { action: "insert-password", password });
+
+    // Attempt to send message
+    chrome.tabs.sendMessage(tab.id, { action: "insert-password", password })
+      .catch(err => {
+        // If connection fails (e.g. extension reloaded), inject script and retry
+        console.log("Injection missing, re-injecting passwordGenerator.js...");
+
+        chrome.scripting.executeScript({
+          target: { tabId: tab.id },
+          files: ["passwordGenerator.js"]
+        }).then(() => {
+          // Retry sending message after successful injection
+          chrome.tabs.sendMessage(tab.id, { action: "insert-password", password });
+        }).catch(err => console.error("Script injection failed: ", err));
+      });
   }
 });

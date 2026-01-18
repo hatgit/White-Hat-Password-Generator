@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Hat Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="all.min.css">
+    <link id="dark-mode-stylesheet" rel="stylesheet" href="dark-mode.css">
+
+
+
+  </head>
+  <body>
+    <div class="form-wrapper-footer">
+      <div class="container-footer">
+        <footer>
+          <h1>White Hat Password Generator
+    <!---these classes wrap the background image in footer-->
+    <label class="switch">   <!---this is the switch in backgroun image for dark mode-->
+      <input type="checkbox" id="darkModeToggle">
+      <span class="slider round"></span>
+      <span class="info-icon material-icons" data-info="test">
+  
+        <!---<span class="info-text">DARK MODE</span></span>-->
+  
+    </label>
+    </div class="container-footer">
+  </div class="form-wrapper-footer">
+  </footer></h1>
+  
+  
+      <header>
+       <!---- <h1>White Hat Password Generator</h1>--->
+        
+        <footer><p> Use of this software is subject to terms and conditions by <a href="https://www.stevenhatzakis.com/whpg-terms/">© 2023 Steven Hatzakis LLC</a>. All rights reserved.</p></footer>
+      
+        <button id="generate">Generate Password </button>
+      </header>
+  
+      <main>
+  
+  
+        <div id="password-container">
+          <label for="password">Cryptographically-Secure Generated Password:</label>
+              <textarea id="password" rows="1" readonly></textarea>
+  
+              <p id="entropy">Strength: 0 entropy bits of security</p>
+              <button id="copy-password-btn">Copy Password</button>
+      </div>
+  
+  
+        <br>
+  
+        <br>
+          <div class="form-wrapper">
+            <div class="container">
+              <div class="form-container">
+                <for id="password-generation-form">
+                  <ol>
+  
+  
+                      <li class="checkbox">
+                        <label for="password-length">Boost security by increasing length: </label>
+                        <input type="number" id="password-length" min="8" value="18">
+                      </li>
+  
+  
+                      <li class="checkbox">
+                        <label for="includeUppercase">Include Uppercase('A-Z'):</label>
+                        <input type="checkbox" id="includeUppercase" checked>
+                      </li>
+  
+                      <li class="checkbox">
+                        <label for="includeLowercase">Include Lowercase ('a-z'):</label>
+                        <input type="checkbox" id="includeLowercase" checked>
+                      </li>
+  
+                      <li class="checkbox">
+                        <label for="includeNumbers">Include Numbers('0-9'):</label>
+                        <input type="checkbox" id="includeNumbers" checked>
+                      </li>
+  
+                      <li class="checkbox">
+                        <label for="includeSymbols">Include Symbols('!@#$%^&*()'):</label>
+                        <input type="checkbox" id="includeSymbols" checked>
+                      </li>
+  
+                      <li class="checkbox">
+                        <label for="includeBinary">Include Binary('01'):</label>
+                        <input type="checkbox" id="includeBinary">
+                      </li>
+  
+                      <li> Click generate button above to create password</li>
+                    </ol>
+                 </form>
+  
+                 
+  
+                  <br>
+              </div>
+            </div>
+          </div>
+
+
+        <div class="instruction-container">
+
+          <p>One-click insertable passwords:</p>
+              <ul>
+                <li>Need a new password, simply right-click and select <b>"Generate Secure Password"</b> from the drop-down menu.</li>
+              </ul>
+
+            <p>How to update your password in Chrome:</p>
+              <ol>
+                <li>Open Chrome settings by clicking the three vertical dots in the top right corner and selecting 'Settings'.</li>
+                <li>Scroll down and click on 'Passwords' under 'Autofill'.</li>
+                <li>Find the website in the list and click on the three vertical dots next to it.</li>
+                <li>Add the password into your Password manager.</li>
+              </ol>
+              <p>Remember your clipboard may retain a copy of your password.</p>
+        </div>
+
+
+      <div class="legend">
+        <div class="legend-item purple"><p>512+ bits (Alien Proof) mind-bogglingly long, from an unfathomably large range.</p></div>
+        <div class="legend-item indigo"><p>256-511 bits(Quantum Secure) sourced from a range larger than the number of atoms in the universe.</p></div>
+        <div class="legend-item blue"><p>128-255 bits(Very Strong) as secure as a cryptocurrency wallet.</p></div>
+        <div class="legend-item green"><p>64-127 bits(Strong) but will be susceptible to quantum and other attacks in the future.</p></div>
+        <div class="legend-item yellow"><p>32-63 bits(Moderate) can be brute force cracked in a few days.</p></div>
+        <div class="legend-item orange"><p>17-31 bits (Very Weak) can be brute force cracked in a few hours.</p></div>
+        <div class="legend-item red"><p>8-16 bits (Weakest) can be brute force cracked in a few minutes.</p></div>
+    </div>
+
+</main>
+<script src="app.js"></script>
+</body>
+</html>

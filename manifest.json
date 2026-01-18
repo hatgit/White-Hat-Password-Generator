@@ -1,6 +1,6 @@
 {
   "name": "White Hat Password Generator",
-  "version": "0.3.401",
+  "version": "0.3.411",
   "description": "Generate cryptographically secure passwords fast, insert with a click. Try White Hat Password Generator and safely make passwords.",
   "manifest_version": 3,
   "icons": {
@@ -9,10 +9,20 @@
     "32": "/icon-32.png",
     "128": "/icon-128.png"
   },
-  "permissions": ["activeTab","contextMenus"],
+  "permissions": [
+    "activeTab",
+    "activeTab",
+    "contextMenus",
+    "scripting"
+  ],
   "content_scripts": [
-    { "matches": ["https://*/*"],
-      "js": ["passwordGenerator.js", "app.js", "jquery.min.js","background.js","contentScript.js"],
+    {
+      "matches": [
+        "https://*/*"
+      ],
+      "js": [
+        "passwordGenerator.js"
+      ],
       "run_at": "document_idle"
     }
   ],
@@ -24,5 +34,4 @@
   "background": {
     "service_worker": "background.js"
   }
-
 }
